@@ -6,17 +6,40 @@ const PATHS = {
     build: path.join(__dirname, 'build')
 };
 
-//  экспорт модуля в node.js
-module.exports = {
-    entry: PATHS.source + '/index.js',
+const common = {
+    entry: {
+        'index': PATHS.source + '/index.js',
+    },
     output: {
         path: PATHS.build,
-        filename: '[name].js'
+        filename: './js/[name].js'
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Webpack app'
         })
     ],
-    mode: 'development'
+};
+
+const developmentConfig = {
+    devServer: {
+        stats: 'errors-only'
+    },
+    mode: 'development',
+};
+
+//  экспорт модуля в node.js
+module.exports = function(env) {
+    console.log(env);
+    if (env === 'production') {
+        return common;
+    }
+    if (env.development) {
+        return Object.assign(
+            {},
+            common,
+            developmentConfig
+        );
+    }
+    
 };
