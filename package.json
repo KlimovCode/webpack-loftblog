@@ -33,5 +33,7 @@
     "webpack-merge": "^5.7.3",
     "pug": "^3.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
 }
