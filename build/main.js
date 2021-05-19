@@ -1,1 +1,0 @@
-(()=>{"use strict";var n=function(n,e){var u=document.createElement("ul");u.className="menu";var r="";return["Главная","Обо мне","Портфолио"].forEach((function(n){r+=`\n            <ul>\n                <li>${n}</li>\n            </ul>`})),u.innerHTML=r,u}();document.body.appendChild(n)})();

@@ -17,5 +17,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Webpack app'
         })
-    ]
+    ],
+    mode: 'development'
 };
