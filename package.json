@@ -1,0 +1,20 @@
+{
+  "name": "webpack-loftblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KlimovCode/webpack-loftblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KlimovCode/webpack-loftblog/issues"
+  },
+  "homepage": "https://github.com/KlimovCode/webpack-loftblog#readme"
+}
