@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/KlimovCode/webpack-loftblog/issues"
   },
-  "homepage": "https://github.com/KlimovCode/webpack-loftblog#readme"
+  "homepage": "https://github.com/KlimovCode/webpack-loftblog#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
+  }
 }
