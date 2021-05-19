@@ -6,6 +6,7 @@ const PATHS = {
     build: path.join(__dirname, 'build')
 };
 
+//  экспорт модуля в node.js
 module.exports = {
     entry: PATHS.source + '/index.js',
     output: {

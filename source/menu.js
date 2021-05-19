@@ -8,10 +8,10 @@ export default function (array, className) {
     
     array.forEach(function(item) {
     
-    listItems += `
-        <ul>
-            <li>' + item + '</li>
-        </ul>`;
+        listItems += `
+            <ul>
+                <li>${item}</li>
+            </ul>`;
     
     });
 

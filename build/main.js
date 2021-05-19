@@ -1,1 +1,1 @@
-(()=>{"use strict";var n=function(n,e){var t=document.createElement("ul");t.className="menu";var u="";return["Главная","Обо мне","Портфолио"].forEach((function(n){u+="\n        <ul>\n            <li>' + item + '</li>\n        </ul>"})),t.innerHTML=u,t}();document.body.appendChild(n)})();
+(()=>{"use strict";var n=function(n,e){var u=document.createElement("ul");u.className="menu";var r="";return["Главная","Обо мне","Портфолио"].forEach((function(n){r+=`\n            <ul>\n                <li>${n}</li>\n            </ul>`})),u.innerHTML=r,u}();document.body.appendChild(n)})();
