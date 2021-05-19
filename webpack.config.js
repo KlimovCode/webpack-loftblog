@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 const PATHS = {
     source: path.join(__dirname, 'source'),
     build: path.join(__dirname, 'build')
@@ -16,9 +17,21 @@ const common = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Webpack app'
+            title: 'Webpack app config',
+            template: PATHS.source + '/index.pug' // template (HtmlWebpackPlugin) — путь до шаблона
         })
     ],
+    module: {
+        rules: [
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader',
+                options: {
+                    pretty: true
+                }
+            }
+        ]
+    }
 };
 
 const developmentConfig = {
