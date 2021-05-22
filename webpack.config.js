@@ -5,6 +5,7 @@ const pug = require('./webpack/pug');
 const css = require('./webpack/css');
 const sass = require('./webpack/sass');
 const devserver = require('./webpack/devserver');
+const extractCSS = require('./webpack/css.extract');
 
 
 const PATHS = {
@@ -33,8 +34,11 @@ const common = merge({
 //  экспорт модуля в node.js
 module.exports = function(env) {
     console.log(env);
-    if (env === 'production') {
-        return common;
+    if (env.production) {
+        return merge([
+            common,
+            extractCSS()
+        ])
     }
     if (env.development) {
         return merge([
