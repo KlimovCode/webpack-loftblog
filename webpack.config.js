@@ -7,6 +7,7 @@ const css = require('./webpack/css');
 const sass = require('./webpack/sass');
 const devserver = require('./webpack/devserver');
 const extractCSS = require('./webpack/css.extract');
+const images = require('./webpack/images');
 
 
 const PATHS = {
@@ -47,7 +48,8 @@ const common = merge({
             }
         },
     },
-    pug()
+    pug(),
+    images
 );
 
 //  экспорт модуля в node.js

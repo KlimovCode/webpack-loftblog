@@ -1,3 +1,13 @@
-h1{
-    color: coral;
+h1 {
+  color: coral;
+}
+
+ul {
+  border: 1px solid #777;
+  background: url("webpack.jpg") no-repeat;
+  li {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #bbb;
+  }
 }
